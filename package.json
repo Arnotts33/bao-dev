@@ -1,0 +1,25 @@
+{
+	"name": "bao-dev",
+	"private": true,
+	"version": "1.0.0",
+	"description": "Astro + Sanity Studio Starter",
+	"workspaces": [
+		"astro",
+		"studio"
+	],
+	"engines": {
+		"node": ">=20"
+	},
+	"scripts": {
+		"dev:web": "pnpm --filter astro dev",
+		"dev:studio": "pnpm --filter studio dev",
+		"build:web": "pnpm --filter astro build",
+		"build:studio": "pnpm --filter studio build",
+		"preview:web": "pnpm --filter astro preview",
+		"deploy:studio": "pnpm --filter studio deploy"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"packageManager": "pnpm@10.6.5"
+}
